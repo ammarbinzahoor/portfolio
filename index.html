@@ -57,6 +57,7 @@ Have fun creating your portfolio on this template!!! -->
   <meta property="twitter:image" content="https://anilseervi.vercel.app/assets/devfolio.png" />
 
   <!-- link tags -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="preload" as="style" href="./css/main.css" />
   <link rel="stylesheet" href="./css/main.css" />
 
@@ -83,9 +84,46 @@ Have fun creating your portfolio on this template!!! -->
 </head>
 
 <body>
+  <!-- navbar Section -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-5">
+    <div class="container-fluid">
+      <a class="navbar-brand text-color-main" href="#about"><span style="font-size: 30px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">ABZ</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-2 m-auto d-flex mb-2 mb-lg-0" style="font-size: 20px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:8a9c0e91-6eba-47ea-8737-0abe479642d8">Resume</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#websites">Websites</a></li>
+              <li><a class="dropdown-item" href="#mockups">Mockups</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#social">Social Media Posts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  <!-- navbar Section -->
   <!-- Hero Section -->
   <div id="hero">
     <section class="container">
+      
       <h1 class="hero-title">
         Hi, my name is <span class="text-color-main name">Ammar Bin Zahoor</span>
         <br />
@@ -137,9 +175,33 @@ Have fun creating your portfolio on this template!!! -->
 
   <!--Projects Section-->
   <section id="projects">
-    <div class="container">
+    <div class="container" id="websites">
       <div class="project-wrapper">
         <h2 class="section-title dark-blue-text">Projects</h2>
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Bebaaz.com</h3>
+            <p class="project-wrapper__text-info">
+             An E-commerce store for Automobile, apparel and Prep Center.
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://www.bebaaz.com/" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">See
+                Live</a>
+              <!-- <a href="#" target="_blank" class="cta-btn text-color-main">Source Code</a> -->
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/bebaaz-main.png" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
 
         <!-- Each .row is a project -->
         <article class="row">
@@ -241,6 +303,251 @@ Have fun creating your portfolio on this template!!! -->
   </section>
   <!-- End Projects Section -->
 
+  <!--Projects Section-->
+  <section id="projects">
+    <div class="container" id="mockups">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Mockups</h2>
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">American Football Uniform</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/american football uniform.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">basketball uniform</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/basketball uniform.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">T-Shirt</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/t-shirt.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Casual Football Uniform</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/football uniform.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Basketball Uniform</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/basketball.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Bag</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/bag.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!--Projects Section-->
+  <section id="projects">
+    <div class="container" id="social">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Social Media Posting</h2>
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Blessed Friday Sale Post</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/Blessed Friday Insta.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Eid Collection Slider</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/Eid.png" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Article Launch</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/Marina Blushing Navy Blue.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Article Launch</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/green lawn coord.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">2k Celebration</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/www.reshamwears.com.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Coming Soon Post</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/coming soon.png" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">blessed Friday Slider</h3>
+            
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/Blessed Friday.jpg" class="img-fluid" alt="Project Image" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
@@ -283,6 +590,7 @@ Have fun creating your portfolio on this template!!! -->
     </div>
   </footer>
   <!-- END Footer Section -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="./javascript/writing.js"></script>
 
   <script>
